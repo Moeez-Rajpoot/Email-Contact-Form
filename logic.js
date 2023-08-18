@@ -1,42 +1,29 @@
 let toastbox = document.getElementById('toastbox');
 
-let mail = document.getElementById('a');
+let maill = document.getElementById('a');
 let namee = document.getElementById('b')
 let phone = document.getElementById('c')
 let textbox = document.getElementById('msg')
 
 
-function send() {
-
-
-
+function sendform() {
     Email.send({
-        Host : "smtp.gmail.com",
-        Username : process.env.User,
-        Password : process.env.Pass,
-        To : process.env.mailto,
-        From : mail.value,
-        Subject : "New Contact",
-        Body : "Name : " + namee.value  
-                + "<br> Email : " + mail.value
-                + "<br> Phone : " + phone.value
-                + "<br> Message : " + textbox.value
-    }).then(
-      message => toast()
-    );
+    
+SecureToken: "fbcbbc0d-8f5a-43f2-abe7-e374526ca1ff",
+To : "moeezrajput10@gmail.com",
+From : "moeezrajput124@gmail.com",
+Subject : "New Contact",
+Body : "Name : " ,
+}).then(
+message => alert(message)
+);
 
-    
-    
+
+
+
 }
 
-
-
-
-
-
 function toast() {
-
-
 
         let toast = document.createElement("div");
         toast.innerHTML =' <i class="fa-solid fa-circle-check"></i> Successfully Submitted ';

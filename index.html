@@ -12,20 +12,20 @@
 
     <div class="main">
         <div class="container">
-        <form onsubmit="send() ; reset();  return false">
+        <form>
             <h2><span>Contact</span> US</h2>
             <div class="Emailbox">
                 <input id="a" type="text" required>
-                <label for="">Email</label>
+                <label for="a">Email</label>
             </div>
             <div class="name">
                 <input id="b" type="text" required>
-                <label for="">Name</label>
+                <label for="c">Name</label>
             </div>
             <div class="phone">
                 
                 <input  id="c" type="tel" required>
-                <label for="">Phone No</label>
+                <label for="c">Phone No</label>
             </div>
             <div class="textbox">
                 
@@ -34,7 +34,7 @@
             </div>
             
             <div class="btns">
-                <button>Send</button>
+                <button type="button" onclick="sendform()">Send</button>
             </div>
            
         </form>
