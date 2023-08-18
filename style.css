@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #08152c;
+    
+}
+
+.main{
+
+    position: relative;
+    display: flex;
+    margin: 90px auto;
+    height: 600px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+
+position: absolute;
+    display: flex;
+    padding: 10px;
+    height: auto;
+    width: 500px;
+    justify-content: center;
+}
+
+h2{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orangered;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 span{
+
+    color: white;
+    font-size: 40px;
+}
+.Emailbox{
+
+    margin: 15px auto;
+    position: relative;
+    max-width: auto;
+    min-width: 400px;
+}
+
+.name{
+    margin: 15px auto;
+    position: relative;
+    max-width: auto;
+    min-width: 400px;
+
+}
+
+.phone{
+    margin: 15px auto;
+    position: relative;
+    max-width: auto;
+    min-width: 400px;
+
+}
+
+.textbox{
+    margin: 15px auto;
+    position: relative;
+    max-width: auto;
+    min-width: 400px;
+
+}
+.Emailbox input{
+
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-color: orangered;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.Emailbox label{
+
+    position: absolute;
+    top: 50%;    
+    left: 20px;
+    transform: translateY(-50%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;  
+    transition: .5s ease;
+}
+.Emailbox input:focus~label ,.Emailbox input:valid~label , .name input:focus~label,  .name input:valid~label  , .phone input:focus~label , .phone input:valid~label {
+
+    top: 1px;
+    font-size: 16px;
+    color:  rgb(139, 213, 243); ;
+    border-color: orangered;
+    font-size: 18px;
+    padding: 0px 4px;
+  }
+
+
+.Emailbox input:hover , .name input:hover, .phone input:hover, .textbox:hover {
+
+    border-color: white;
+} 
+
+.name input{
+
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-color: orangered;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.name label{
+
+    position: absolute;
+    top: 50%;    
+    left: 20px;
+    transform: translateY(-50%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;  
+    transition: .5s ease;
+}
+
+.phone input{
+
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-color: orangered;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.phone label{
+
+    position: absolute;
+    top: 50%;    
+    left: 20px;
+    transform: translateY(-50%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;  
+    transition: .5s ease;
+}
+
+.textbox{
+
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    border-color: orangered;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.textbox textarea{
+
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+::placeholder{
+
+    color: white;
+
+}
+
+
+
+.btns{
+
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.btns button{
+
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px;
+    outline: none;
+    border: none;
+    height: 50px;
+    max-width: auto;
+    min-width: auto;
+    color: white;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: orangered
+}
+.btns button:hover{
+
+    
+    background-color: white;
+    color:orangered;
+
+}
+
+
+
+#toastbox{
+
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.toast{
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    border-radius: 2px;
+    width: 250px;
+    color: rgb(0, 0, 0);
+    margin: 10px auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 7px 7px 11px -4px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 7px 7px 11px -4px rgba(255,255,255,0.75);
+    -moz-box-shadow: 7px 7px 11px -4px rgba(255,255,255,0.75);
+    transform: translateX(100%);
+    animation: moveleft 0.5s linear forwards
+
+}
+
+.error{
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    border-radius: 2px;
+    width: 250px;
+    color: rgb(0, 0, 0);
+    margin: 10px auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 7px 7px 11px -4px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 7px 7px 11px -4px rgba(255,255,255,0.75);
+    -moz-box-shadow: 7px 7px 11px -4px rgba(255,255,255,0.75);
+    transform: translateX(100%);
+    animation: moveleft 0.5s linear forwards
+
+}
+
+@keyframes moveleft {
+
+    100%{
+
+        transform: translateX(0%);
+    }
+    
+}
+
+.toast i{
+    padding: 10px;
+    color: green;
+    font-size: 30px;
+}
+
+
+.error i{
+    padding: 10px;
+    color: rgb(251, 4, 0);
+    font-size: 30px;
+}
+.toast::after{
+
+ content: " ";
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 5px;
+ background-color: green;
+ animation: anime 5s linear forwards;
+}
+
+@keyframes anime {
+
+    100%{
+        width: 0;
+    }
+
+
+}
+  

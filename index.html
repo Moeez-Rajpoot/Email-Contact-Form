@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d8790da0b7.js" crossorigin="anonymous"></script>
+    <title>Email Form</title>
+</head>
+<body>
+    
+
+    <div class="main">
+        <div class="container">
+        <form onsubmit="send() ; reset();  return false">
+            <h2><span>Contact</span> US</h2>
+            <div class="Emailbox">
+                <input id="a" type="text" required>
+                <label for="">Email</label>
+            </div>
+            <div class="name">
+                <input id="b" type="text" required>
+                <label for="">Name</label>
+            </div>
+            <div class="phone">
+                
+                <input  id="c" type="tel" required>
+                <label for="">Phone No</label>
+            </div>
+            <div class="textbox">
+                
+                <textarea name="msg" id="msg" cols="45" rows="10" placeholder="Enter Your Message here." required></textarea>
+                
+            </div>
+            
+            <div class="btns">
+                <button>Send</button>
+            </div>
+           
+        </form>
+        </div>
+        </div>
+    
+    <div id="toastbox">
+       
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./logic.js"></script>
+</body>
+</html>
